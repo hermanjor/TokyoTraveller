@@ -22,7 +22,7 @@ p {
 }
 .bg-3 {
   background-color: #7841bd; /* Lilla */
-  color: #555555;
+  color: #ffffff;
 }
 .bg-4 {
   background-color: #6e92d0; /* Blå */
@@ -52,7 +52,7 @@ p {
   align-self: auto;
   max-width: 100%;
   max-height: 100%;
-  border-radius: 300px;
+  border-radius: 200px;
 }
 
 .left-underline {
@@ -67,6 +67,7 @@ p {
   position: relative;
   overflow: hidden;
 }
+/* Understreking ved hover over knapp */
 .left-underline:before {
   content: "";
   position: absolute;
