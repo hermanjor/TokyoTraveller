@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <!-- Tema hentet fra https://www.w3schools.com/bootstrap/bootstrap_theme_me.asp  -->
+  <title>Tokyo Traveller</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="button.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!--  Test Google font Herman -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!--  Test slutt over -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+
+</head>
+<body>
+
+<!-- Menylinje -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+  </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#spillet" class="left-underline">SPILLET</a></li>
+        <li><a href="#omoss" class="left-underline">OM OSS</a></li>
+        <li><a href="#kontakt" class="left-underline">KONTAKT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Første Container (Video)-->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="h1">Tokyo Traveller</h3>
+  <div class="container-fluid">
+    <video autoplay muted loop id="myVideo">
+      <source src="media/TokyoTraveler.mp4" type="video/mp4">
+       Nettleseren din støtter ikke videoelementet.
+      </video>
+  </div>
+
+  <!-- Knappen -->
+  <div class='bg'>
+    <div class='cont'>
+    <button class='button' onClick="startSpill()">
+       <div class='blob'>
+          <svg  viewBox='0 0 310 350'   >
+          <path d='M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z' />
+          </svg>
+        </div>
+        <div class='line'></div>
+        <div class='text'>
+          <p>P</p>
+          <p>L</p>
+          <p>A</p>
+          <p>Y</p>
+          <p>G</p>
+          <p>A</p>
+          <p>M</p>
+          <p>E</p>
+          <p>!</p>
+        </div>
+      </button>
+      
+     
+      
+  </div>
+</div>
+
+<!-- Andre Container (Om spillet)-->
+<div class="container-fluid bg-4 text-center">
+  <h3 id="spillet" class="margin">Om spillet</h3>
+
+  <p>Himari er på oppdrag i 2121´s Japan, og du må hjelpe henne med å redde menneskeheten fra corona! Det er ikke mange liv igjen på planeten, men så lenge du og Himari jobber sammen, så finnes det håp for oss alle! </p>
+<br>
+   <button id="historieKnapp" class="btn btn-default btn-lg" onClick="visHistorie()">Jeg vil vite mer!</button>
+
+  <div id="historie" hidden>
+
+    <h2>Historien om vår heltinne</h2>
+    <div class="row">
+    <div class="col-sm-3">
+        Historien finner sted i et dystopiskt postapokalyptisk univers, der heltinnen Himari lever i 2121´s Japan.
+Corona har nå herjet på jorden i over 100 år, og det er ikke mange mennesker igjen. Gjennom generasjoner har desperate forsøk på teknologiske fremskritt sendt menneskeheten ut i kaos der selv de fysiske lovene har blitt utfordret!
+<img class="storyImg col-sm-3" src="media/1.png">    
+</div>
+</div>
+    <img class="storyImg col-sm-3" src="media/2.png">
+    <p class="col-sm-3">
+        DU spiller som Himari, som er en ung Ronin sendt fra Tokugawa-regionen. Rōnin, er en betegning som blir gitt herreløse samuraier i det føydale Japan, og Himari har trent for denne oppgaven siden hun var en liten Kodomodachi.
+    </p>
+</div>
+    <p class="col-sm-3">
+        Gjennom eksperimentell og farlig forskning har verdenssamfunnet kommet frem til en vaksine. Denne beskytter deg ikke fullstendig fra Korona, men den lar deg tøyle kraftene til gravitasjonen selv!
+        Du må bruke gravitasjonskreftene for å finne spor i kampen for en mer effektiv vaksine.
+    </p>
+    <img class="storyImg col-sm-3" src="media/3.png">
+</div>
+        <img class="storyImg col-sm-3" src="media/4.png">
+        <p class="col-sm-3">
+        Nå er det opp til deg og Himari! Vil dere sende verden ut i fullstendig kollaps, eller redde samfunnet så vi alle snart kan feire jul og 17.mai sammen igjen? Himari betyr sol, og nå er det deres tid for å skinne! Lykke til!
+    </p>
+</div>
+</div>
+</div>
+
+
+<!-- Tredje Container (Om oss) -->
+<div class="container-fluid bg-4 text-center">
+  <h3 id="omoss" class="margin">Hvem er gruppe 20?</h3><br>
+  <p>En kort intro om hvor sjukt god gruppa vår er, og så noen mer detaljer per person over hvert bilde</p>
+  <div class="row">
+    <div class="col-sm-3">
+      <h2>Konrad</h2>
+      <p>Konrad. Blabla</p>
+      <img src="media/konrad-img.jpg" class="img-responsive margin" style="width:100%" alt="Portrett av Konrad">
+    </div>
+    <div class="col-sm-3">
+      <h2>Herman</h2>
+      <p>Herman. Blabla</p>
+      <img src="media/herman-img.jpg" class="img-responsive margin" style="width:100%" alt="Portrett av Herman">
+    </div>
+    <div class="col-sm-3">
+      <h2>Peter</h2>
+      <p>Peter. Blabla.</p>
+      <img src="media/peter-img.jpg" class="img-responsive margin" style="width:100%" alt="Portrett av Peter">
+    </div>
+    <div class="col-sm-3">
+      <h2>Andreas</h2>
+      <p>Andreas. Blabla</p>
+      <img src="media/andreas-img.jpg" class="img-responsive margin" style="width:100%" alt="Portrett av Andreas">
+    </div>
+  </div>
+</div>
+
+<!-- Fjerde Container (Kontakt oss)-->
+<div id="kontakt" class="container-fluid bg-1 text-center">
+  <h3 class="margin">Kontakt oss</h3>
+  <p>Vi er tilgjengelig på mail og telefon, og svarer gjerne på innspill og spørsmål angående prosjektet!</p>
+  <a href="mailto:peppes@peppes.no" class="btn btn-default btn-lg">
+   Send en e-post
+  </a>
+  <a href="tel:+4722224444" class="btn btn-default btn-lg">
+    Ring
+   </a>
+
+
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Laget av gruppe 20 - Webteknikker og teamarbeid - 2021</p>
+</footer>
+
+</body>
+</html>
