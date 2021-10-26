@@ -96,10 +96,3 @@ p {
 .left-underline:active:before {
   right: 0;
 }
-/* Bilder på "om spillet"-delen */
-.storyImg {
-  position: relative;
-  align-self: auto;
-  max-width: 400px;
-  max-height: 400px;
-}
