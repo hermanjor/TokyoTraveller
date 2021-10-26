@@ -50,12 +50,13 @@ p {
 .navbar-nav li a:hover {
   color: #f4888a !important;
 }
-#myVideo {
+/* Video som autospiller øverst på nettsiden */
+#autoVideo {
   position: relative;
   align-self: auto;
   max-width: 100%;
   max-height: 100%;
-  border-radius: 200px;
+  border-radius: 5em;
 }
 .left-underline {
   display: inline-block;
