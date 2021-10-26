@@ -1,5 +1,6 @@
-/* CSS */
+/* Samlet CSS for nettsiden */
 
+/* Body */
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,6 +13,7 @@ p {
 .margin {
   margin-bottom: 45px;
 }
+/* Farger på "boksene" */
 .bg-1 {
   background-color: #f4888a; /* Rosa */
   color: #ffffff;
@@ -89,14 +91,7 @@ p {
 .left-underline:active:before {
   right: 0;
 }
-/* Bilde */
-.img {
-  top: -15px;
-  position: relative;
-  align-self: auto;
-  max-width: 100px;
-  max-height: 90px;
-}
+/* Bilder på "om spillet"-delen */
 .storyImg {
   position: relative;
   align-self: auto;
