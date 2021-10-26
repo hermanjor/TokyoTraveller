@@ -32,6 +32,7 @@ p {
   padding-top: 70px;
   padding-bottom: 70px;
 }
+/* Menylinje */
 .navbar {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -54,7 +55,6 @@ p {
   max-height: 100%;
   border-radius: 200px;
 }
-
 .left-underline {
   display: inline-block;
   vertical-align: middle;
@@ -89,6 +89,7 @@ p {
 .left-underline:active:before {
   right: 0;
 }
+/* Bilde */
 .img {
   top: -15px;
   position: relative;

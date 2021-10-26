@@ -1,7 +1,6 @@
 // Javascript-fil
 
-//Kontaktskjema her kanskje?
-
+//Funksjon for "Les mer-knappen" på forsiden?
 function visHistorie() {
   var x = document.getElementById("historie");
   var y = document.getElementById("historieKnapp");
