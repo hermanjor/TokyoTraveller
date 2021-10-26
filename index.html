@@ -15,20 +15,20 @@
 </head>
 <body>
 
-<!-- Menylinje (bør gjøre den statisk festet på toppen!)-->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
+<!-- Menylinje (bør gjøre den statisk festet på toppen!) Legg merke til <nav>-elementet for å vise at dette er navigasjon til personer med hjelpeverktøy-->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#tokyoNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+      </div>
     </div>
-  </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
+    <div class="collapse navbar-collapse" id="tokyoNavbar">
+   <ul class="nav navbar-nav navbar-right">
         <li><a href="#spillet" class="left-underline">SPILLET</a></li>
         <li><a href="#omoss" class="left-underline">OM OSS</a></li>
         <li><a href="#kontakt" class="left-underline">KONTAKT</a></li>
@@ -45,20 +45,17 @@
       <source src="media/TokyoTraveler.mp4" type="video/mp4">
        Nettleseren din støtter ikke videoelementet.
       </video>
-    <!-- Knapp -->
 <button type="button" class="btn btn-primary btn-lg">Spill nå!</button>
+  </div>
   </div>
 
 <!-- Andre Container (Om spillet)-->
 <div class="container-fluid bg-2 text-center">
   <h2 id="spillet" class="margin">Om spillet</h2>
-
   <p>Himari er på oppdrag i 2121´s Japan, og du må hjelpe henne med å redde menneskeheten fra corona! Det er ikke mange liv igjen på planeten, men så lenge du og Himari jobber sammen, så finnes det håp for oss alle! </p>
-<br>
-   <button id="historieKnapp" class="btn btn-default btn-md" onClick="visHistorie()">Jeg vil vite mer!</button>
-
+  <button id="historieKnapp" class="btn btn-primary btn-ld" onClick="visHistorie()">Jeg vil vite mer!</button>
   <div id="historie" hidden>
-
+    
     <h3>Historien om vår heltinne</h3>
     <div class="row">
     <div class="col-sm-8 text-left">
@@ -101,7 +98,7 @@ Corona har nå herjet på jorden i over 100 år, og det er ikke mange mennesker 
     </div>
     <div class="col-sm-3">
       <h3>Herman</h3>
-      <p>Herman er 22 år gammel. Er fra Furnes, like utenfor Hamar, og flyttet opp til Trondheim i 2019 for å begynne på studier. Jobber ved siden av studiene i VilMer som produktutvikler, og tilbringer fritiden sammen med kjæresten eller kollektivet sitt. Har lært å sette opp GitHub gjennom dette prosjektet og er storfornøyd med det.</p>
+      <p>Herman er 22 år gammel. Er fra Furnes, like utenfor Hamar, og flyttet opp til Trondheim i 2019 for å begynne på studier. Jobber ved siden av studiene i VilMer som produktutvikler. Tilbringer fritiden sammen med kompiser, kjæresten eller kollektivet sitt. Har lært å sette opp GitHub gjennom dette prosjektet og er storfornøyd med det.</p>
       <img src="media/herman-img.jpg" class="img-responsive margin" alt="Portrett av Herman">
     </div>
     <div class="col-sm-3">

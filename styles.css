@@ -36,14 +36,16 @@ p {
 }
 /* Menylinje */
 .navbar {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
   font-size: 12px;
   letter-spacing: 5px;
+  background-color: #ffffff; /* Rosa */
 }
+/* Understreking ved hover på meny*/
 .navbar-nav {
   color: #f4888a;
 }
@@ -58,6 +60,7 @@ p {
   max-height: 100%;
   border-radius: 5em;
 }
+/* HVA GJØR DENNE?*/
 .left-underline {
   display: inline-block;
   vertical-align: middle;
@@ -70,7 +73,7 @@ p {
   position: relative;
   overflow: hidden;
 }
-/* Understreking ved hover over knapp */
+/* HVA GJØR DENNE?*/
 .left-underline:before {
   content: "";
   position: absolute;
@@ -87,6 +90,7 @@ p {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+/* HVA GJØR DENNE?*/
 .left-underline:hover:before,
 .left-underline:focus:before,
 .left-underline:active:before {
