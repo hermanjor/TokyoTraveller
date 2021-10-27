@@ -46,16 +46,20 @@ p {
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
-  font-size: 12px;
   letter-spacing: 5px;
-  background-color: #ffffff; /* Rosa */
+  background-color: #0d0427; /* Svart */
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85em;
 }
-/* Understreking ved hover på meny*/
 .navbar-nav {
   color: #f4888a;
 }
+.navbar-default .navbar-nav > li > a {
+  color: rgb(255, 255, 255);
+}
+/* Skriftfarge meny hover */
 .navbar-nav li a:hover {
-  color: #f4888a !important;
+  color: #f3f3f3 !important;
 }
 /* Video som autospiller øverst på nettsiden */
 #autoVideo {
